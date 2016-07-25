@@ -1,0 +1,26 @@
+#JSGF V1.0;
+
+grammar smartEnv;
+
+<object> = (air conditioning | dimmer | heat | fan | light);
+
+<currState> = (on | off | up | down);
+
+<degree> = (high | medium | low);
+
+<percent> = (zero | ten | twenty | thirty | forty | fifty | sixty | seventy | eighty | ninety | one hundred | a hundred | twenty five | seventy five);
+
+<doorState> = (lock | unlock | open | close);
+
+<alias> = (front | back | patio | side | bedroom | bathroom | kitchen | upstairs | downstairs);
+
+public <command> = <doorState> [the | my] [<alias>*] door 
+| turn <currState> [the | my] [<alias>*] <object> [that is] [<alias>*]
+| turn [the | my] [<alias>*] <object> [that is] [<alias>*] <currState> [<alias>*]
+| set [the | my] [<alias>*] <object> [that is] [<alias>*] to <degree> [degrees]
+| set [the | my] [<alias>*] <object> [that is] [<alias>*] to <percent> [percent]
+| is [the | my] [<alias>*] <object> [that is] [<alias>*] <currState> 
+| what is the status of [the | my] [<alias>*] <object> [that is] [<alias>*]
+| what is the status of [the | my] security system
+| yes | no;
+
