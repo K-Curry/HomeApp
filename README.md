@@ -8,7 +8,9 @@ The jsgf grammar is attatched to improve accuracy.
 
 ----------------------------------------------------------------------------------------
 In order to run the c version, you need:
-*Pocketsphinx \n
+
+*Pocketsphinx 
+
 *Sphinxbase
 
 -----------------------------------------------------------------------------------------
