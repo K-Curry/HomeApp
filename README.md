@@ -15,11 +15,17 @@ In order to run the c version, you need:
 
 -----------------------------------------------------------------------------------------
 In order to run python version, you need:
+
 *Pocketsphonx
+
 *Sphinxbase
+
 *Gstreamer 1.0
+
 *pygtk/gtk+
+
 *Python
+
 (webbrowser should be included in python)
 
 >> Note: the PSAP Avatar is browser dependent. It will output audio regardless of browser, 
